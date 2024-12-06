@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #fff;">
+
+  <nav class="navbar navbar-expand-lg bg-custom" style="height: 70px; z-index: 2;">
+    <div class="bg-custom container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-cloud-moon"></i>
+      </a>
+      <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="home" class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Team">Team</a></li>
+              <li><a class="dropdown-item" href="#Contact">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+    
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/hero 1 (2).jpg" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="./images/hero 2.jpg" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="./images/hero 3.jpg" class="d-block w-100" alt="..." >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="container py-5" id="About">
+        <h2 class="display-4 text-center mb-4">About Us</h2>
+        <div class="row align-items-center">
+          <!-- Image on Left Side -->
+          <div class="col-lg-6 mb-4">
+            <img src="./images/About.png" alt="About Image" class="img-fluid about-img">
+          </div>
+      
+          <!-- Text on Right Side -->
+          <div class="col-lg-6">
+            <div class="about-card">
+              <h3 class="about-text">Who We Are</h3>
+              <p class="about-text">
+                We are a team of passionate developers, designers, and strategists who aim to create seamless digital experiences for our clients. Our mission is to deliver high-quality services in web development, mobile apps, and digital marketing.
+              </p>
+              <p class="about-text">
+                We focus on innovative solutions to help businesses thrive online, building products that users love. Let's work together and create something amazing!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-light py-5" id="Services">
+        <div class="container">
+          <h2 class="display-4 text-center mb-4">Services</h2>
+          <div class="row">
+            <!-- Service Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <i class="fas fa-code service-icon"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">We provide high-quality web development services, ensuring your website is fast, responsive, and user-friendly.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Service Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <div class="card-body">
+                  <h5 class="card-title">App Development</h5>
+                  <p class="card-text">Our team specializes in developing mobile applications that are tailored to your business needs, both for iOS and Android.</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Service Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <i class="fas fa-search service-icon"></i>
+                <div class="card-body">
+                  <h5 class="card-title">SEO Optimization</h5>
+                  <p class="card-text">We offer SEO services to improve your website's visibility on search engines and increase organic traffic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="bg-light py-5" id="Portfolio">
+        <div class="container">
+          <h2 class="display-4 text-center mb-4">Portfolio</h2>
+          <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="	https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/app-1.jpg" alt="Project 1">
+                <div class="portfolio-info">
+                  <h3>Project 1</h3>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/product-1.jpg" alt="Project 2">
+                <div class="portfolio-info">
+                  <h3>Project 2</h3>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/branding-1.jpg" alt="Project 3">
+                <div class="portfolio-info">
+                  <h3>Project 3</h3>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/product-2.jpg" alt="Project 4">
+                <div class="portfolio-info">
+                  <h3>Project 4</h3>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="	https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/books-3.jpg" alt="Project 5">
+                <div class="portfolio-info">
+                  <h3>Project 5</h3>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Portfolio Item 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="portfolio-item">
+                <img src="	https://bootstrapmade.com/content/demo/Ninestars/assets/img/portfolio/app-3.jpg" alt="Project 6">
+                <div class="portfolio-info">
+                  <h3>Project 6</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="bg-light py-5" id="Team">
+        <div class="container">
+          <h2 class="display-4 text-center mb-4">Team</h2>
+          <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="team-card">
+                <img src="https://bootstrapmade.com/content/demo/Ninestars/assets/img/team/team-1.jpg" alt="Team Member 1">
+                <div class="team-card-body">
+                  <h5 class="team-card-title">John Doe</h5>
+                  <p class="team-card-text">Lead Developer</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Team Member 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="team-card">
+                <img src="	https://bootstrapmade.com/content/demo/Ninestars/assets/img/team/team-4.jpg" alt="Team Member 2">
+                <div class="team-card-body">
+                  <h5 class="team-card-title">Jane Smith</h5>
+                  <p class="team-card-text">UI/UX Designer</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Team Member 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="team-card">
+                <img src="https://bootstrapmade.com/content/demo/Ninestars/assets/img/team/team-3.jpg" alt="Team Member 3">
+                <div class="team-card-body">
+                  <h5 class="team-card-title">Robert Brown</h5>
+                  <p class="team-card-text">Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container py-5" id="Contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your message here"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
+      <footer class="bg-dark text-light pt-5">
+        <div class="container">
+          <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-4 mb-4">
+              <h5>About Us</h5>
+              <p>
+                We are a team of passionate developers providing top-notch web and app development services. Let us help you build your dream project!
+              </p>
+            </div>
+      
+            <!-- Quick Links Section -->
+            <div class="col-md-4 mb-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                <li><a href="#About" class="text-light text-decoration-none">About</a></li>
+                <li><a href="#Services" class="text-light text-decoration-none">Services</a></li>
+                <li><a href="#Contact" class="text-light text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Us Section -->
+            <div class="col-md-4 mb-4">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-phone"></i> +92 316 1045 073</li>
+                <li><i class="fas fa-envelope"></i> info@example.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Karachi Pakistan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <!-- Social Media Icons -->
+              <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-center">
+              <p class="mb-0">&copy; 2024 CodeWithSMR. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
